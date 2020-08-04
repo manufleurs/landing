@@ -1,0 +1,133 @@
+/* Write some CSS below */
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 18px;
+	color:	rgb(30, 30, 30);
+	background-color: rgb(240,240,240);
+}
+
+h1 {
+	font-family: 'Roboto Slab', serif;
+}
+
+h2 {
+	font-weight: 700;
+}
+
+h3 {
+	font-weight: 400
+}
+
+p {
+	font-weight: 300
+}
+
+
+.container {
+	width: 800px;
+	margin: auto;
+}
+
+.banner {
+	background-image: url(images/background.jpg);
+	background-size: cover;
+	background-position: center;
+	text-align: center;
+	padding: 100px 0;
+}
+
+.banner h1 {
+	font-size: 50px;
+	color: white;
+	margin: 0;
+}
+
+.banner p {
+	margin-bottom: 40px;
+	color: white;
+	font-size: 25px;
+}
+
+.btn-blue {
+	background-color: #005086;
+	color: white;
+	padding: 10px 15px;
+	border-radius: 4px;
+	text-decoration: none;
+
+}
+
+.btn-blue:hover {
+	background-color: #318fb5;
+	color: white;
+}
+
+.cards {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 16px;
+}
+
+.card-white {
+	background-color: white;
+	box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1)
+	padding: 24px;
+	width: 250px;
+	border-radius: 10px;
+	margin: 8px;
+	text-align: center;
+}
+
+.card-white img {
+	width: 200px;
+	height: 150px;
+	margin: 20px;
+	object-fit: cover;
+	border-radius: 4px;
+}
+
+.footer {
+	height: 50px;
+	background-color: #005086;
+	background-size: cover;
+	color: white;
+}
+
+.footer p {
+	font-size: 15px;
+	color: white;
+	text-align: center;
+	padding: 15px;
+
+}
+
+/*cards media queries*/
+@media (max-width: 800px) {
+	.cards {
+		grid-template-columns: 1fr;
+	}
+	.card-white {
+		width: auto;
+	}
+}
+/*container media queries*/
+@media (min-width: 500px) {
+	.container {
+		width: 400px;
+	}
+}
+
+@media (min-width: 800px) {
+	.container {
+		width: 600px;
+	}
+}
+
+@media (min-width: 1000px) {
+	.container {
+		width: 800px;
+	}
+}
+
+
+
